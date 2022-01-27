@@ -1,8 +1,6 @@
 const Employees = require("../database/models/employeeModel");
 
 module.exports.createEmployee = async (serviceData) => {
-	console.log(serviceData);
-
 	try {
 		const employee = Employees;
 
