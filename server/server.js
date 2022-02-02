@@ -24,8 +24,8 @@ app.use(express.urlencoded({ extended: true }));
 //Handle Routes
 app.use("/api", employeeRoutes);
 
-app.get("/", (req, res) => {
-	res.send("<h2>server main</h2>");
-});
+// app.get("/", (req, res) => {
+// 	res.send("<h2>server main</h2>");
+// });
 
 app.listen(PORT, () => console.log(`App is listnening on ${PORT}`));
