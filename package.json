@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./server/server",
-    "start": "node server.js",
+    "start": "node ./server/server.js",
     "populate-db": "node ./server/scripts/populateEmployeeDatabase.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
