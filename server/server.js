@@ -24,6 +24,10 @@ app.use(express.urlencoded({ extended: true }));
 //Handle Routes
 app.use("/api", employeeRoutes);
 
+app.get("*", function (request, response) {
+  response.sendFile(path.resolve(__dirname, "public", "index.html"));
+});
+
 // app.get("/", (req, res) => {
 // 	res.send("<h2>server main</h2>");
 // });

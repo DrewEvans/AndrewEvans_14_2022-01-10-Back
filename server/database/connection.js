@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const databaseUrl = process.env.DATABASE_URL;
+const databaseUrl = process.env.DATABASE_URL || "https://localhost:5000/";
 
 module.exports = async () => {
   try {
